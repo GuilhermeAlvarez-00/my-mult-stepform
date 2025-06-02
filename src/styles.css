@@ -11,3 +11,7 @@
 	--color-blue-200: hsl(206, 94%, 87%);
 	--color-red-500: hsl(354, 84%, 57%);
 }
+
+* {
+	font-family: var(--font-ubuntu);
+}
