@@ -20,9 +20,9 @@ export const Steps: FC<ISteps> = ({ steps }) => {
         backgroundSize: "cover",
         backgroundPosition: "center",
       }}
-      className={`relative w-full h-full md:rounded-lg`}
+      className={`md:px-2 lg:px-8 relative w-full h-full md:rounded-lg`}
     >
-      <div className="flex justify-center">
+      <div>
         <ol className="flex gap-4 justify-center mt-8 md:flex-col md:gap-6">
           {steps?.map((item) => (
             <li key={item?.indicator}>
