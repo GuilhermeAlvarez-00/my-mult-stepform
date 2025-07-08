@@ -1,4 +1,4 @@
-import type { Meta, StoryObj } from '@storybook/react';
+import type { Meta, StoryObj } from "@storybook/react";
 import { FaReact } from "react-icons/fa";
 
 import { StepItem } from "../";
@@ -12,17 +12,17 @@ const meta: TMeta = {
 	tags: ["autodocs"],
 	parameters: {
 		backgrounds: {
-			default: "Purple"
-		}
-	}
-}
+			default: "Purple",
+		},
+	},
+};
 
 export const Primary: TStory = {
 	args: {
 		stepKey: <span>1</span>,
 		indicator: "STEP 1",
 		label: "YOUR INFO",
-		active: false
+		active: false,
 	},
 };
 
@@ -31,7 +31,7 @@ export const Active: TStory = {
 		stepKey: <span>1</span>,
 		indicator: "STEP 1",
 		label: "YOUR INFO",
-		active: true
+		active: true,
 	},
 };
 
@@ -41,7 +41,7 @@ export const Short: TStory = {
 		indicator: "STEP 1",
 		label: "YOUR INFO",
 		active: false,
-		short: true
+		short: true,
 	},
 };
 
@@ -51,7 +51,7 @@ export const WithIcon: TStory = {
 		indicator: "STEP 1",
 		label: "YOUR INFO",
 		active: false,
-	}
+	},
 };
 
 export default meta;

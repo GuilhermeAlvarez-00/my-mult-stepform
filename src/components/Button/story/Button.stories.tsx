@@ -6,30 +6,30 @@ type TMeta = Meta<typeof Button>;
 type TStory = StoryObj<typeof Button>;
 
 const meta: TMeta = {
-  title: "Components/Button",
-  component: Button,
-  tags: ["autodocs"],
+	title: "Components/Button",
+	component: Button,
+	tags: ["autodocs"],
 };
 
 export const Primary: TStory = {
-  args: {
-    children: "Next Step",
-  },
+	args: {
+		children: "Next Step",
+	},
 };
 
 export const Secondary: TStory = {
-  args: {
-    children: "Next Step",
-    className: "bg-purple-600",
-  },
+	args: {
+		children: "Next Step",
+		className: "bg-purple-600",
+	},
 };
 
 export const WithOnClick: TStory = {
-  args: {
-    children: "Next Step",
-    className: "bg-purple-600",
-    onClick: () => alert("Hello world!"),
-  },
+	args: {
+		children: "Next Step",
+		className: "bg-purple-600",
+		onClick: () => alert("Hello world!"),
+	},
 };
 
 export default meta;

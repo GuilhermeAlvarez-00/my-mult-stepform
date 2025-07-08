@@ -6,30 +6,30 @@ type TMeta = Meta<typeof ToggleSwitch>;
 type TStory = StoryObj<typeof ToggleSwitch>;
 
 const meta: TMeta = {
-  title: "Components/ToggleSwitch",
-  component: ToggleSwitch,
-  tags: ["autodocs"],
+	title: "Components/ToggleSwitch",
+	component: ToggleSwitch,
+	tags: ["autodocs"],
 };
 
 export const Primary: TStory = {
-  args: {
-    onChange: () => {},
-  },
+	args: {
+		onChange: () => {},
+	},
 };
 
 export const PersistBg: TStory = {
-  args: {
-    persistBg: true,
+	args: {
+		persistBg: true,
 
-    onChange: () => {},
-  },
+		onChange: () => {},
+	},
 };
 
 export const CustomBackgroundColor: TStory = {
-  args: {
-    onChange: () => {},
-    className: "bg-red-500",
-  },
+	args: {
+		onChange: () => {},
+		className: "bg-red-500",
+	},
 };
 
 export default meta;

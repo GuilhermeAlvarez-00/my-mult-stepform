@@ -1,4 +1,4 @@
-import type { Meta, StoryObj } from '@storybook/react';
+import type { Meta, StoryObj } from "@storybook/react";
 
 import { Input } from "../";
 
@@ -8,23 +8,23 @@ type TStory = StoryObj<typeof Input>;
 const meta: TMeta = {
 	title: "Components/Input",
 	component: Input,
-	tags: ["autodocs"]
-}
+	tags: ["autodocs"],
+};
 
 export const Primary: TStory = {
-  args: {
-    placeholder: 'Input placedholder',
-  },
+	args: {
+		placeholder: "Input placedholder",
+	},
 };
 
 export const Error: TStory = {
-  args: {
+	args: {
 		className: {
 			root: "mt-5",
 		},
-    placeholder: 'Input placedholder',
-		error: "This field is required"
-  },
+		placeholder: "Input placedholder",
+		error: "This field is required",
+	},
 };
 
 export default meta;
