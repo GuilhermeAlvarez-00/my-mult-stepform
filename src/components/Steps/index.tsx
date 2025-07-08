@@ -1,3 +1,4 @@
+import type { FC } from "react";
 import { useScreen } from "../../hooks/useScreen";
 import { StepItem, type IStepItem } from "../StepItem";
 
@@ -8,7 +9,7 @@ interface ISteps {
 const bgMobile = "/src/assets/images/bg-sidebar-mobile.svg";
 const bgDesktop = "/src/assets/images/bg-sidebar-desktop.svg";
 
-export const Steps = ({ steps }: ISteps) => {
+export const Steps: FC<ISteps> = ({ steps }) => {
   const { width, breakpoints } = useScreen();
 
   return (
